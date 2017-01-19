@@ -1,0 +1,234 @@
+﻿<!doctype html>
+<html lang="pt-br">
+   <head>
+      <title>  Material Design -  02 (Layout) </title>
+      <!-- adapata para mobile -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- codigo para adicionar o mdl -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+      <!-- css de cores -->
+      <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.deep_orange-cyan.min.css" />
+      <!-- codigo para adicionar conjunto de fontes do goole -->
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+      <style>
+         .mdl-layout__header {
+         padding: 20px;
+         }
+         .mdl-cell mdl-cell--8-col {
+         box-shadow: 0 0 3px #000;
+         }
+         .mdl-card{
+         width:  720px;
+         height: 500px;
+		 padding-top: 0px;
+         min-height: auto;          
+		border-radius: 15px;
+		}
+      
+	    .mdl-card__supporting-text{
+		  padding: 0px;
+		 
+		  
+		}
+	  
+	  a {
+	    text-decoration: none;
+	  }
+	  
+	  header nav a:hover {
+	    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
+	    transition: 0.7s;
+	  }
+	  
+	  nav a {
+	    transition: 0.7s;
+	   -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+	  
+	  
+	  }
+	  
+	  
+	  </style>
+   </head>
+   <body>
+      <div class="mdl-layout mdl-js-layout">
+         
+		 <div class="mdl-layout mdl-js-layout">
+                    <div class="mdl-layout__drawer" aria-hidden="true">
+            <span class="mdl-layout__title"> Navegue </span>
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="index.html" id="menu"> Home </a>
+              <a class="mdl-navigation__link" href="disciplinas.html"> Disciplinas </a>
+              <a class="mdl-navigation__link" href="arquivos.html">  Arquivos</a>
+              <a class="mdl-navigation__link" href="artigos.html">  Artigos</a>
+			  <a class="mdl-navigation__link" href="contato.html">  Contato</a>
+              <a class="mdl-navigation__link" href="imagens/conteudo.doc"> Disciplina de  UX  </a>
+			  <a class="mdl-navigation__link" href="http://www.rodrigofujioka.com/wiki/index.php?title=Turma_1"> Cronograma de Aula </a>
+			   
+			  
+		   </nav>
+          </div>
+			<div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button"><i class="material-icons"> </i></div>
+		 
+		 <header class="mdl-layout__header">
+            <div class="mdl-layout-icon"> </div>
+            <div class="mdl-layout__header-row">
+               <span class="mdl-layout__title"> <img src="imagens/logo.png" />  </span>
+               <div class="mdl-layout-spacer"></div>
+               <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="index.html"> 
+				<span class="mdl-chip mdl-chip--contact">
+				    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white"> <img class="mdl-chip__contact" src="imagens/home.png"></img></span>
+				    <span class="mdl-chip__text">Home</span>
+				</span>				   
+			</a>
+              
+				  
+			 <a class="mdl-navigation__link" href="disciplinas.html"> 
+				<span class="mdl-chip mdl-chip--contact">
+					<span class="mdl-chip__contact mdl-color--teal mdl-color-text--white"> <img class="mdl-chip__contact" src="imagens/disciplinas.jpg"></img></span>
+					<span class="mdl-chip__text">Disciplinas</span>
+				</span>
+				    
+		    </a>
+				  
+				  
+			  <a class="mdl-navigation__link" href="arquivos.html"> 
+				<span class="mdl-chip mdl-chip--contact">
+				    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white"> <img class="mdl-chip__contact" src="imagens/arquivos.jpg"></img></span>
+				    <span class="mdl-chip__text">Arquivos</span>
+				</span>				   
+			</a>
+            
+			 <a class="mdl-navigation__link" href="artigos.html"> 
+				<span class="mdl-chip mdl-chip--contact">
+				    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white"> <img class="mdl-chip__contact" src="imagens/artigos.jpg"></img></span>
+				    <span class="mdl-chip__text">Artigos dos Alunos</span>
+				</span>				   
+			</a>
+             
+			 <a class="mdl-navigation__link" href="contato.html"> 
+				<span class="mdl-chip mdl-chip--contact">
+				    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white"> <img class="mdl-chip__contact" src="imagens/contato.png"></img></span>
+				    <span class="mdl-chip__text">Contato </span>
+				</span>				   
+			</a>
+			 
+			 
+			 
+               </nav>
+            </div>
+         </header>
+         <main class="mdl-layout__content" style="background-image: url('web.jpg');">
+          <hr>
+	        <br> <br>
+			<div class="mdl-grid">
+               <div class="mdl-cell mdl-cell--3-col"> 
+               </div>
+               <div class="mdl-cell mdl-cell--6-col"> 
+              
+			     
+				   
+				   <div class="demo-card-wide mdl-card mdl-shadow--3dp" id="muda">
+                       <div style="background: #FF5722; height: 50px;">   </div>
+					   <img src="imagens/formulario.jpg" style="width: 400px; padding-top: 10px; margin-left: 170px;;">
+                    <br>			    
+					<div align="center">   
+				       <form action="#">
+						  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="sample3">
+							<label class="mdl-textfield__label" for="sample3" style="color: #FF5722"> Digite aqui o seu nome: </label>
+						  </div>
+					      <br>
+						  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="sample3">
+							<label class="mdl-textfield__label" for="sample3" style="color:#FF5722;"> Digite aqui o seu e-mail: </label>
+						  </div>
+						  <br>
+						  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+							<label class="mdl-textfield__label" for="sample4" style="color: #FF5722;">Digite aqui o seu telefone</label>
+							<span class="mdl-textfield__error">Digite apenas números</span>
+						  </div>
+							<br>				
+					       <div class="mdl-textfield mdl-js-textfield">
+								<textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+								<label class="mdl-textfield__label" for="sample5" style="color: #FF5722;"> Digite aqui a sua mensagem: </label>
+						</div>
+					      <br>
+						  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="margin-left: 300px; border-radius: 15px;" onclick="alert('Dados enviados com sucesso!')">
+							  Enviar Dados
+							</button>
+					
+					 </form>
+			
+				  </div>		
+                    <div style="background: #FF5722; height: 50px; margin-top: 25px;" >   </div>
+				  </div>
+       
+			   </div>
+               <div class="mdl-cell mdl-cell--3-col"> </div>
+			</div>
+  
+		   <br>  <br> <br>  <br> <br> <br> <br>
+        <footer class="mdl-mega-footer" >
+          <div class="mdl-mega-footer--middle-section">
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading"> Home</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="index.html"> Quem somos?</a></li>
+                <li><a href="index.html"> Atas de Reuniões</a></li>
+                <li><a href="index.html"> Startup da Turma</a></li>
+                <li><a href="http://www.rodrigofujioka.com/wiki/index.php?title=Turma_1"> Cronograma do Curso </a></li>
+			    <li><a href="imagens/conteudo.jpg"> Novidades UX</a></li>
+			  </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Disciplinas</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="disciplinas.html#features">Listar Disciplinas</a></li>
+                <li><a href="disciplinas.html#overview">Cadastrar Disciplinas</a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Recursos</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="arquivos.html">Arquivos</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+             
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Ajuda</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="contato.html">Contate-nos</a></li>
+                <li><a href="http://www.facebook.com.br">Redes Sociais</a></li>
+                <li><a href="http://www.google.com.br"> Pesquise no google</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-mega-footer--bottom-section">
+            <div class="mdl-logo">
+           
+            </div>
+            <ul class="mdl-Todo-link-list" style="margin-left: 350px; list-style-type: none;">
+              <li>   Desenvolvido por Everton B. da Silva Copyright 2016 ©  </li>
+              <li style="margin-left: 100px;">   Tel. (83) 9-9817-6300 </li>
+             
+            </ul>
+          </div>
+        </footer>
+		   
+		</main>
+      </div>
+   </body>
+</html>

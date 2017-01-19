@@ -1,0 +1,392 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Material Design Lite</title>
+     
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="$$hosted_libs_prefix$$/$$version$$/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+      <!-- css de cores -->
+      <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.deep_orange-cyan.min.css" />
+      <!-- codigo para adicionar conjunto de fontes do goole -->
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	
+	<style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+	
+	  header nav a:hover {
+	    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
+	    transition: 0.7s;
+	  }
+	  
+	  nav a {
+	    transition: 0.7s;
+	   -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+	  
+	  
+	  }
+	
+    </style>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <div class="mdl-layout mdl-js-layout">
+                    <div class="mdl-layout__drawer" aria-hidden="true">
+            <span class="mdl-layout__title"> Navegue </span>
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="index.html" id="menu"> Home </a>
+              <a class="mdl-navigation__link" href="disciplinas.html"> Disciplinas </a>
+              <a class="mdl-navigation__link" href="arquivos.html">  Arquivos</a>
+              <a class="mdl-navigation__link" href="artigos.html">  Artigos</a>
+			  <a class="mdl-navigation__link" href="contato.html">  Contato</a>
+              <a class="mdl-navigation__link" href="imagens/conteudo.doc"> Disciplina de  UX  </a>
+			  <a class="mdl-navigation__link" href="http://www.rodrigofujioka.com/wiki/index.php?title=Turma_1"> Cronograma de Aula </a>
+			   
+			  
+		   </nav>
+          </div>
+			<div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button"><i class="material-icons"> </i></div>
+	  
+	  
+	  
+	  <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+       <div style="background: rgb(255,87,34); width: 100%; height: 110px;">
+         <div class="mdl-layout-icon"> </div>
+	   <div class="mdl-layout__header-row">	    
+	    <span class="mdl-layout__title"> <img src="imagens/logo.png" style="margin-top:55px; margin-left: 65px;"/>  </span>
+               <div class="mdl-layout-spacer"></div>
+
+		<nav class="mdl-navigation" style="padding-top: 60px;">
+
+			<a class="mdl-navigation__link" href="index.html"> 
+				<span class="mdl-chip mdl-chip--contact">
+				    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white"> <img class="mdl-chip__contact" src="imagens/home.png"></img></span>
+				    <span class="mdl-chip__text">Home</span>
+				</span>				   
+			</a>
+              
+				  
+			 <a class="mdl-navigation__link" href="disciplinas.html"> 
+				<span class="mdl-chip mdl-chip--contact">
+					<span class="mdl-chip__contact mdl-color--teal mdl-color-text--white"> <img class="mdl-chip__contact" src="imagens/disciplinas.jpg"></img></span>
+					<span class="mdl-chip__text">Disciplinas</span>
+				</span>
+				    
+		    </a>
+				  
+				  
+			  <a class="mdl-navigation__link" href="arquivos.html"> 
+				<span class="mdl-chip mdl-chip--contact">
+				    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white"> <img class="mdl-chip__contact" src="imagens/arquivos.jpg"></img></span>
+				    <span class="mdl-chip__text">Arquivos</span>
+				</span>				   
+			</a>
+            
+			 <a class="mdl-navigation__link" href="artigos.html"> 
+				<span class="mdl-chip mdl-chip--contact">
+				    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white"> <img class="mdl-chip__contact" src="imagens/artigos.jpg"></img></span>
+				    <span class="mdl-chip__text">Artigos dos Alunos</span>
+				</span>				   
+			</a>
+             
+			 <a class="mdl-navigation__link" href="contato.html"> 
+				<span class="mdl-chip mdl-chip--contact">
+				    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white"> <img class="mdl-chip__contact" src="imagens/contato.png"></img></span>
+				    <span class="mdl-chip__text">Contato </span>
+				</span>				   
+			</a>
+			 
+			 
+			 
+               </nav>
+        </div>	  
+	  </div>
+
+
+      </header>
+	  <br> <br> <br>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="features">
+               <table class="mdl-data-table mdl-js-data-table  mdl-shadow--2dp" style="margin-left: 400px;">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">Arquivos Disponíveis </th>
+      <th> Disciplina </th>
+	  <th> Data de Upload</th>
+	  <th> Download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric"> Material HTML 5</td>
+      <td>Interfaces Web</td>
+      <td> 02/02/2016</td>
+	  <td>
+	
+		 	  <a href="imagens/interfaces.jpg" class="mdl-navigation__link mdl-navigation__link--icon download">
+          
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--mini-fab mdl-color--lime-A200" data-upgraded=",MaterialButton,MaterialRipple">
+              <i class="material-icons"></i>
+            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+          </a>  
+		  
+		  </td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric"> Material Java</td>
+      <td> Framework Spring MVC</td>
+      <td> 07/07/2016</td>
+	     <td> 
+	
+		 	  <a href="imagens/spring.jpg" class="mdl-navigation__link mdl-navigation__link--icon download">
+          
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--mini-fab mdl-color--lime-A200" data-upgraded=",MaterialButton,MaterialRipple">
+              <i class="material-icons"></i>
+            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+          </a> 
+		 
+		 </td>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric"> Material PHP</td>
+      <td> Programação PHP</td>
+      <td> 11/11/2015</td>
+	     <td> 
+	
+		 	  <a href="imagens/php.jpg" class="mdl-navigation__link mdl-navigation__link--icon download">
+          
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--mini-fab mdl-color--lime-A200" data-upgraded=",MaterialButton,MaterialRipple">
+              <i class="material-icons"></i>
+            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+          </a> 
+		 
+		 
+		 </td>
+    </tr>
+	
+	    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Material Responsividade </td>
+      <td> Responsividade</td>
+      <td> 05/05/2016</td>
+	     <td> 
+		 
+	
+		 	  <a href="imagens/responsivo.jpg" class="mdl-navigation__link mdl-navigation__link--icon download">
+          
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--mini-fab mdl-color--lime-A200" data-upgraded=",MaterialButton,MaterialRipple">
+              <i class="material-icons"></i>
+            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+          </a> 
+		 
+		 </td>
+    </tr>
+	
+	
+	    <tr>
+      <td class="mdl-data-table__cell--non-numeric">Java Web</td>
+      <td> Fundamentos Java</td>
+      <td> 03/03/2016</td>
+	     <td> 
+		 
+		 	  <a href="imagens/java.jpg" class="mdl-navigation__link mdl-navigation__link--icon download">
+          
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--mini-fab mdl-color--lime-A200" data-upgraded=",MaterialButton,MaterialRipple">
+              <i class="material-icons"></i>
+            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+          </a> 
+		 
+		 
+		 </td>
+    </tr>
+	
+	
+  </tbody>
+</table>
+			   
+			   
+			   
+			   
+        </div>
+        <div class="mdl-layout__tab-panel" id="features">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4> Pós Graduação em Desenvolvimento Web </h4>
+              <p> Abaixo você pode visualizar a lista das disciplinas do curso bem como a indicação daquelas que já foram cursadas:
+	      <ul class="demo-list-control mdl-list">
+              
+        	  <li class="mdl-list__item">
+			<span class="mdl-list__item-primary-content">
+			 <img src="disciplinas.jpg" width="35px;" /> 
+		    &nbsp; &nbsp;  Fundamentos de Programação para Web (OO, Java e PHP)
+			</span>
+			<span class="mdl-list__item-secondary-action">
+			  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+				<input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked />
+			  </label>
+			</span>
+		  </li>
+			
+		<li class="mdl-list__item">
+			<span class="mdl-list__item-primary-content">
+			 <img src="disciplinas.jpg" width="35px;" /> 
+			 &nbsp; &nbsp;  Análise e Design de Sistemas para Web (UML)
+			</span>
+			<span class="mdl-list__item-secondary-action">
+			  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+				<input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked />
+			  </label>
+			</span>
+		  </li>
+		
+		   <li class="mdl-list__item">
+			<span class="mdl-list__item-primary-content">
+			 <img src="disciplinas.jpg" width="35px;" /> 
+			 &nbsp; &nbsp;  Desenvolvimento de Sistemas web com PHP
+			</span>
+			<span class="mdl-list__item-secondary-action">
+			  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+				<input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked />
+			  </label>
+			</span>
+		  </li>
+		  
+		  
+		  <li class="mdl-list__item">
+			<span class="mdl-list__item-primary-content">
+			 <img src="disciplinas.jpg" width="35px;" /> 
+			 &nbsp; &nbsp;  Desenvolvimento de Interfaces Web (HTML5, CSS e JavaScript)
+			</span>
+			<span class="mdl-list__item-secondary-action">
+			  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+				<input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked />
+			  </label>
+			</span>
+		  </li>
+		  
+		  <li class="mdl-list__item">
+			<span class="mdl-list__item-primary-content">
+			 <img src="disciplinas.jpg" width="35px;" /> 
+			 &nbsp; &nbsp;  Desenvolvimento de Sistemas web com PHP Frameworks
+			</span>
+			<span class="mdl-list__item-secondary-action">
+			  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+				<input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked />
+			  </label>
+			</span>
+		  </li>
+		  
+          </section>
+        </div> 
+	<br>  <br> <br>  <br> <br> <br> <br>
+        <footer class="mdl-mega-footer" >
+          <div class="mdl-mega-footer--middle-section">
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading"> Home</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="index.html"> Quem somos?</a></li>
+                <li><a href="index.html"> Atas de Reuniões</a></li>
+                <li><a href="index.html"> Startup da Turma</a></li>
+                <li><a href="http://www.rodrigofujioka.com/wiki/index.php?title=Turma_1"> Cronograma do Curso </a></li>
+			    <li><a href="imagens/conteudo.jpg"> Novidades UX</a></li>
+			  </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Disciplinas</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="disciplinas.html#features">Listar Disciplinas</a></li>
+                <li><a href="disciplinas.html#overview">Cadastrar Disciplinas</a></li>
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Recursos</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="arquivos.html">Arquivos</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+             
+              </ul>
+            </div>
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Ajuda</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="contato.html">Contate-nos</a></li>
+                <li><a href="http://www.facebook.com.br">Redes Sociais</a></li>
+                <li><a href="http://www.google.com.br"> Pesquise no google</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-mega-footer--bottom-section">
+            <div class="mdl-logo">
+           
+            </div>
+            <ul class="mdl-Todo-link-list" style="margin-left: 350px; list-style-type: none;">
+              <li>   Desenvolvido por Everton B. da Silva Copyright 2016 ©  </li>
+              <li style="margin-left: 100px;">   Tel. (83) 9-9817-6300 </li>
+             
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="$$hosted_libs_prefix$$/$$version$$/material.min.js"></script>
+  </body>
+</html>
